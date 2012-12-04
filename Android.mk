@@ -2,8 +2,6 @@ LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE_TAGS := optional
-
 LOCAL_STATIC_JAVA_LIBRARIES := android-support-v13
 LOCAL_STATIC_JAVA_LIBRARIES += com.android.gallery3d.common2
 LOCAL_STATIC_JAVA_LIBRARIES += xmp_toolkit
@@ -22,8 +20,6 @@ LOCAL_AAPT_FLAGS := --auto-add-overlay \
 LOCAL_PACKAGE_NAME := Gallery2
 
 LOCAL_OVERRIDES_PACKAGES := Gallery Gallery3D GalleryNew3D
-
-LOCAL_SDK_VERSION := current
 
 # If this is an unbundled build (to install seprately) then include
 # the libraries in the APK, otherwise just put them in /system/lib and
